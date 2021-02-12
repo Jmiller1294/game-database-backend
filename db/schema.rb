@@ -17,9 +17,14 @@ ActiveRecord::Schema.define(version: 2021_02_11_075751) do
 
   create_table "consoles", force: :cascade do |t|
     t.string "name"
-    t.integer "release_date"
+    t.string "release_date"
     t.string "company"
-    t.integer "generation"
+    t.string "generation"
+    t.string "launch_price"
+    t.string "cpu"
+    t.string "gpu"
+    t.string "memory"
+    t.string "units_sold"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
